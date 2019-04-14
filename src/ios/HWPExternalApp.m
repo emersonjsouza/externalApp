@@ -1,6 +1,6 @@
-#import "HWPHello.h"
+#import "HWPExternalApp.h"
 
-@implementation HWPHello
+@implementation HWPExternalApp
 
 - (void)greet:(CDVInvokedUrlCommand*)command
 {

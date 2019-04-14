@@ -3,28 +3,24 @@
   "version": "0.1.0",
   "description": "A sample for a new cordova plugin",
   "cordova": {
-    "id": "cordova-plugin-hello",
-    "platforms": [
-      "android",
-      "ios",
-      "wp7"
-    ]
+    "id": "cordova-plugin-externalapp",
+    "platforms": ["ios"]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/don/cordova-plugin-hello.git"
+    "url": "git+https://github.com/don/cordova-plugin-externalapp.git"
   },
   "keywords": [
     "cordova",
     "plugin",
-    "hello",
+    "externalapp",
     "ecosystem:cordova",
     "cordova-android"
   ],
   "author": "Don Coleman",
   "license": "Apache-2",
   "bugs": {
-    "url": "https://github.com/don/cordova-plugin-hello/issues"
+    "url": "https://github.com/don/cordova-plugin-externalapp/issues"
   },
-  "homepage": "https://github.com/don/cordova-plugin-hello#readme"
+  "homepage": "https://github.com/don/cordova-plugin-externalapp#readme"
 }
