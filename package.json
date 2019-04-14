@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/don/cordova-plugin-externalapp.git"
+    "url": "git+https://github.com/emersonjsouza/externalApp.git"
   },
   "keywords": [
     "cordova",
@@ -18,9 +18,5 @@
     "cordova-android"
   ],
   "author": "Don Coleman",
-  "license": "Apache-2",
-  "bugs": {
-    "url": "https://github.com/don/cordova-plugin-externalapp/issues"
-  },
-  "homepage": "https://github.com/don/cordova-plugin-externalapp#readme"
+  "license": "Apache-2"
 }
