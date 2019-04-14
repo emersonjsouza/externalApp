@@ -2,6 +2,6 @@
 
 @interface HWPExternalApp : CDVPlugin
 
-- (void) greet:(CDVInvokedUrlCommand*)command;
+- (void) openWhatsapp:(CDVInvokedUrlCommand*)command;
 
 @end

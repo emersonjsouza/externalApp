@@ -2,17 +2,15 @@
 
 @implementation HWPExternalApp
 
-- (void)greet:(CDVInvokedUrlCommand*)command
+- (void)openWhatsapp:(CDVInvokedUrlCommand*)command
 {
-
-    NSString* name = [[command arguments] objectAtIndex:0];
-    NSString* msg = [NSString stringWithFormat: @"Hello, %@", name];
-
-    CDVPluginResult* result = [CDVPluginResult
-                               resultWithStatus:CDVCommandStatus_OK
-                               messageAsString:msg];
-
-    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+    NSString* phone = [[command arguments] objectAtIndex:0];
+    NSString* link = [NSString stringWithFormat: @"whatsapp://send?phone=%@", phone];
+    NSURL *whatsappURL = [NSURL URLWithString:link];
+    
+    if ([[UIApplication sharedApplication] canOpenURL: whatsappURL]) {
+        [[UIApplication sharedApplication] openURL: whatsappURL];
+    }
 }
 
 @end

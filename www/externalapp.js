@@ -1,7 +1,7 @@
 /*global cordova, module*/
 
 module.exports = {
-    greet: function (name, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "ExternalApp", "greet", [name]);
+    openWhatsapp: function (phone, msg, successCallback, errorCallback) {
+        cordova.exec(successCallback, errorCallback, "ExternalApp", "openWhatsapp", [phone, msg]);
     }
 };
